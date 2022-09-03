@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+        <title>Dokumentasi Instalasi & Setting</title>
+
+        <!-- General CSS Files -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="main-wrapper">
+                <div class="navbar-bg"></div>
+                <nav class="navbar navbar-expand-lg main-navbar">
+                    <form class="form-inline mr-auto">
+                        <ul class="navbar-nav mr-3">
+                            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </form>
+                </nav>
+                <div class="main-sidebar">
+                    <aside id="sidebar-wrapper">
+                        <div class="sidebar-brand">
+                            <a href="documentation.html">Documentation</a>
+                        </div>
+                        <div class="sidebar-brand sidebar-brand-sm">
+                            <a href="documentation.html">Doc</a>
+                        </div>
+                        <ul class="sidebar-menu">
+                            <li class="menu-header">Link</li>
+                            <li><a class="nav-link" href="#demo"><i class="fas fa-book"></i> <span>Demo</span></a></li>
+                            <li><a class="nav-link" href="#spesifikasi"><i class="fas fa-book"></i> <span>Spesifikasi</span></a></li>
+                            <li><a class="nav-link" href="#step1"><i class="fas fa-book"></i> <span>Step 1</span></a></li>
+                            <li><a class="nav-link" href="#step2"><i class="fas fa-book"></i> <span>Step 2</span></a></li>
+                            <li><a class="nav-link" href="#step3"><i class="fas fa-book"></i> <span>Step 3</span></a></li>
+                            <li><a class="nav-link" href="#step4"><i class="fas fa-book"></i> <span>Step 4</span></a></li>
+                            <li><a class="nav-link" href="#step5"><i class="fas fa-book"></i> <span>Step 5</span></a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <section class="section">
+                        <div class="section-header">
+                            <h1>Dokumentasi Instalasi & Setting</h1>
+                        </div>
+
+                        <div class="section-body">
+                            <div class="row" id="demo">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Demo</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="alert alert-light">
+                                                Untuk hasil akhir bisa diakses <strong><a href="http://testkuswandi.harmonihost.web.id/public/" target="_blank">disini</a></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="spesifikasi">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Spesifikasi</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Laravel Version : <strong>8.75</strong></li>
+                                                <li>Database : <strong>MySQL</strong></li>
+                                                <li>Library : <strong>jQuery, DataTable</strong></li>
+                                                <li>Template : <a href="https://getstisla.com/" target="_blank"><strong>Sistla</strong></a></li>
+                                                <li>Fitur : </li>
+                                                <ol>
+                                                    <li>Login</li>
+                                                    <li>Master Barang</li>
+                                                    <li>Transaksi Barang Masuk</li>
+                                                    <li>Transaksi Barang Keluar</li>
+                                                    <li>Report Stock</li>
+                                                    <li>Manajemen data stock barang menggunakan TRIGGER</li>
+                                                    <li>Input detail barang masuk dan barang keluar menggunakan AJAX</li>
+                                                </ol>
+                                                <li class="text-danger">Kekurangan : </li>
+                                                <ol>
+                                                    <li class="text-danger">Input master barang belum ada validasi untuk duplikasi kode barang</li>
+                                                    <li class="text-danger">Input detail transaksi barang masuk & barang keluar, jika ada kode barang yg sama qty belum terakumulasi</li>
+                                                    <li class="text-danger">Input detail transaksi barang keluar belum ada validasi jika stok barang kosong atau kurang</li>
+                                                    <li class="text-danger">Report stok barang belum ada untuk menampilkan stok per barang, hanya per tanggal dokumen</li>
+                                                </ol>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="step1">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Step 1 - Create Database</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Create database melalui phpMyAdmin dengan nama database <i><strong>db_inventory</strong></i><br>
+                                                <img src="assets/img/doc/createdatabase.png">
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="step2">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Step 2 - Copy Folder</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Copy folder <i><strong>inventory</strong></i> ke folder <i><strong>htdocs</strong></i><br>
+                                                <img src="assets/img/doc/folderinventory.png">
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="step3">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Step 3 - Setting file .env di folder project</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Cari file <i><strong>.env</strong></i> di folder <i><strong>inventory</strong></i>, 
+                                                dan sesuaikan setting untuk koneksi dengan database yang sudah dibuat<br>
+                                                <img src="assets/img/doc/fileenv.png"><br><br>
+                                                <img src="assets/img/doc/fileenvedit.png">
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="step4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Step 4 - Migration</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Buka <i><strong>command prompt</strong></i> dan arahkan ke folder <i><strong>inventory</strong></i><br>                                                
+                                                Jalankan migrasi tabel ke database dengan perintah <i><strong><span class="text-danger">php artisan migrate</span></strong></i><br>
+                                                <img src="assets/img/doc/cmdmigrate.png"><br><br>
+                                                <img src="assets/img/doc/cmdmigrateinfo.png">                                                
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="step5">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Step 5 - Running</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Masih di command prompt folder <i><strong>inventory</strong></i>, 
+                                                untuk menjalankannya ketik perintah <i><strong><span class="text-danger">php artisan serve</span></strong></i><br>
+                                                <img src="assets/img/doc/runningcmd.png"><br><br>
+                                                Selanjutnya buka browser dan bisa diakses dengan url <i><strong><span class="text-danger">http://127.0.0.1:8000</span></strong></i><br>
+                                                <img src="assets/img/doc/runningbrowser.png"><br><br>
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <footer class="main-footer">
+                    <div class="footer-left">
+                        Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+                    </div>
+                    <div class="footer-right">
+                        2.3.0
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- General JS Scripts -->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.min.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/stisla.js"></script>
+
+        <!-- Template JS File -->
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
